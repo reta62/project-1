@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="#top"><img src="images/burger_logo.png" alt="Burgers"></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a class="nav-book" href="#book">Book Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="top">
+      <div class="hero-text">
+        <h1>Burger Food Take Away</h1>
+        <p>Tasting pleasure from the first bite</p>
+        <a class="btn" href="#menu">See the menu</a>
+      </div>
+      <img class="hero-badge" src="images/burger_header.png" alt="Burger, daily fresh">
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <h3>Tradition since 2010</h3>
+        <p>Burger started in 2010, when Mr. Smith opened a small kitchen with one grill and a short menu. We still shape every patty by hand, bake our buns each morning and build every burger to order.</p>
+        <p>We only use seasonal ingredients, so the menu shifts a little with every harvest.</p>
+      </div>
+      <img src="images/about.jpg" alt="A burger with fries on a wooden board">
+    </section>
+
+    <section class="menu" id="menu">
+      <h2>Our Menu</h2>
+
+      <article class="dish">
+        <img src="images/burger_01.jpg" alt="Cheeseburger on a sesame bun with fries">
+        <div>
+          <h3>Classic Cheddar</h3>
+          <ul>
+            <li>Sesame brioche bun</li>
+            <li>Grilled beef patty</li>
+            <li>Melted cheddar</li>
+            <li>Green leaf lettuce</li>
+            <li>House burger sauce</li>
+            <li>Crispy fries on the side</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="dish">
+        <img src="images/burger_02.jpg" alt="Bacon burger with lettuce and green chili relish">
+        <div>
+          <h3>Smoky Bacon</h3>
+          <ul>
+            <li>Sesame bun</li>
+            <li>Garlic mayonnaise</li>
+            <li>Crisp lettuce</li>
+            <li>Beef patty</li>
+            <li>Smoked bacon</li>
+            <li>Cheddar with green chili relish</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="dish">
+        <img src="images/burger_03.jpg" alt="Burger with lettuce and creamy sauce on a white plate">
+        <div>
+          <h3>Creamy Bacon</h3>
+          <ul>
+            <li>Soft glazed bun</li>
+            <li>Creamy mayo spread</li>
+            <li>Frisée lettuce</li>
+            <li>Grilled pineapple</li>
+            <li>Beef patty</li>
+            <li>Crispy bacon</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="dish">
+        <img src="images/burger_04.jpg" alt="Burger with melted cheese, ham and caramelized onions">
+        <div>
+          <h3>Double Cheese &amp; Onion</h3>
+          <ul>
+            <li>Glazed brioche bun</li>
+            <li>Beef patty</li>
+            <li>Melted mozzarella</li>
+            <li>Cheddar sauce</li>
+            <li>Caramelized onions</li>
+            <li>Sliced smoked ham</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section class="book" id="book">
+      <h2>Book Now</h2>
+      <form class="booking" action="#" method="post">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+
+        <label for="people">How many people</label>
+        <input id="people" name="people" type="number" min="1" max="20" required>
+
+        <label for="date">Date</label>
+        <input id="date" name="date" type="date" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Book</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Burger | All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
